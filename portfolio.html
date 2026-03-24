@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Muhammad Usama Farooq - Digital Marketing Specialist. Expert in social media management, paid advertising, and digital campaigns.">
+    <meta name="keywords" content="Digital Marketing, Social Media Manager, Meta Ads, Google Ads, Marketing Specialist">
+    <meta name="author" content="Muhammad Usama Farooq">
+    <meta property="og:title" content="Muhammad Usama Farooq - Digital Marketing Specialist">
+    <meta property="og:description" content="Driving growth through strategic digital marketing campaigns and social media management.">
+    <meta property="og:type" content="website">
+    
+    <title>Muhammad Usama Farooq - Digital Marketing Specialist</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #10B981;
+            --primary-light: #D1FAE5;
+            --primary-dark: #059669;
+            --background: #F8F8F8;
+            --text-primary: #1A1A1A;
+            --text-secondary: #6B7280;
+            --border: #E5E7EB;
+            --white: #FFFFFF;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+            --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--primary-dark);
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(248, 248, 248, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 0;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-cta {
+            background: var(--primary);
+            color: var(--white);
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .nav-cta:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 6rem 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            margin-bottom: 1rem;
+            line-height: 1.1;
+        }
+
+        .hero-tag {
+            display: inline-block;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+
+        .hero-description {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            max-width: 500px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.875rem 2rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-secondary {
+            background: var(--white);
+            color: var(--text-primary);
+            border: 2px solid var(--border);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Section */
+        section {
+            padding: 6rem 2rem;
+        }
+
+        .section-header {
+            margin-bottom: 4rem;
+        }
+
+        .section-tag {
+            display: inline-block;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-description {
+            font-size: 1.1rem;
+            max-width: 600px;
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: var(--white);
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            border: 1px solid var(--border);
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            overflow: hidden;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .project-content {
+            padding: 2rem;
+        }
+
+        .project-title {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-description {
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tag {
+            display: inline-block;
+            background: var(--primary-light);
+            color: var(--primary-dark);
+            padding: 0.35rem 0.75rem;
+            border-radius: 0.35rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-card {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            border: 2px solid var(--border);
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .skill-card:hover {
+            border-color: var(--primary);
+            background: var(--primary-light);
+            transform: translateY(-4px);
+        }
+
+        .skill-card p {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 0;
+        }
+
+        /* About Section */
+        .about {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-image {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .about-content h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        .about-content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .about-content .btn {
+            margin-top: 1rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact h2 {
+            margin-bottom: 1rem;
+        }
+
+        .contact-description {
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+        }
+
+        .contact-methods {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-card {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 1.5rem;
+            border: 2px solid var(--border);
+            border-radius: 0.75rem;
+            transition: all 0.3s ease;
+            background: var(--white);
+        }
+
+        .contact-card:hover {
+            border-color: var(--primary);
+            background: var(--primary-light);
+            transform: translateY(-4px);
+        }
+
+        .contact-card a {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .contact-card a:hover {
+            color: var(--primary);
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            color: var(--primary);
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid var(--border);
+            background: rgba(248, 248, 248, 0.5);
+            padding: 3rem 2rem;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .footer-copyright {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .footer-links a {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Divider */
+        .divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, var(--border), transparent);
+            margin: 4rem 0;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+                padding: 3rem 1rem;
+            }
+
+            .hero-image {
+                height: 300px;
+                order: -1;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .about {
+                grid-template-columns: 1fr;
+            }
+
+            .about-image {
+                order: -1;
+            }
+
+            section {
+                padding: 3rem 1rem;
+            }
+
+            .contact-methods {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .contact-card {
+                justify-content: center;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-links {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.4rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-content container">
+            <div class="logo">Muhammad Usama</div>
+            <ul class="nav-links">
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="nav-cta">Get In Touch</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container" style="grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+            <div class="hero-content fade-in-up">
+                <span class="hero-tag">Digital Marketing Specialist</span>
+                <h1>Driving Growth Through Strategic Marketing</h1>
+                <p class="hero-description">
+                    I create and execute data-driven digital marketing campaigns that generate quality leads, boost conversions, and drive measurable business results. Specialized in social media management, paid advertising, and content strategy.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#work" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image fade-in-up" style="animation-delay: 0.1s;">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%23667eea' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' font-size='24' fill='white' text-anchor='middle' dominant-baseline='middle' font-family='Arial'%3EYour Portfolio Image%3C/text%3E%3C/svg%3E" alt="Hero">
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Featured Work Section -->
+    <section id="work">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Featured Projects</span>
+                <h2 class="section-title">Campaign & Marketing Work</h2>
+                <p class="section-description">
+                    A showcase of successful digital marketing campaigns, social media strategies, and content creation projects that delivered measurable results.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card fade-in-up">
+                    <div class="project-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect fill='%2310B981' width='400' height='200'/%3E%3Ctext x='50%25' y='50%25' font-size='18' fill='white' text-anchor='middle' dominant-baseline='middle' font-family='Arial'%3EFairy Marketing%3C/text%3E%3C/svg%3E" alt="Project 1">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Social Media Management - Fairy Marketing</h3>
+                        <p class="project-description">
+                            Currently managing comprehensive social media strategy including graphic design, paid campaigns on Google & Meta, lead generation, and team leadership for videographers and editors.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Social Media</span>
+                            <span class="tag">Meta Ads</span>
+                            <span class="tag">Google Ads</span>
+                            <span class="tag">Graphic Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="project-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect fill='%23667eea' width='400' height='200'/%3E%3Ctext x='50%25' y='50%25' font-size='18' fill='white' text-anchor='middle' dominant-baseline='middle' font-family='Arial'%3EMars Business Sol%3C/text%3E%3C/svg%3E" alt="Project 2">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Digital Marketing Campaigns - Mars Business Sol</h3>
+                        <p class="project-description">
+                            Led successful multi-platform campaigns focusing on lead generation and conversion optimization. Managed strategic retargeting campaigns and created engaging graphics and video content.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Campaign Strategy</span>
+                            <span class="tag">Lead Generation</span>
+                            <span class="tag">Content Creation</span>
+                            <span class="tag">Analytics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="project-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect fill='%23764ba2' width='400' height='200'/%3E%3Ctext x='50%25' y='50%25' font-size='18' fill='white' text-anchor='middle' dominant-baseline='middle' font-family='Arial'%3EDBS Marketing%3C/text%3E%3C/svg%3E" alt="Project 3">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">A/B Testing & Audience Targeting - DBS Marketing</h3>
+                        <p class="project-description">
+                            Executed data-driven marketing campaigns with A/B testing, website analytics tracking, and custom/lookalike audience targeting. Collaborated with cross-functional teams to align strategies.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">A/B Testing</span>
+                            <span class="tag">Analytics</span>
+                            <span class="tag">Audience Targeting</span>
+                            <span class="tag">Optimization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Skills Section -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Expertise</span>
+                <h2 class="section-title">Skills & Certifications</h2>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card fade-in-up">
+                    <p>Social Media Management</p>
+                </div>
+                <div class="skill-card fade-in-up" style="animation-delay: 0.05s;">
+                    <p>Meta Ads & Facebook Ads</p>
+                </div>
+                <div class="skill-card fade-in-up" style="animation-delay: 0.1s;">
+                    <p>Google Ads</p>
+                </div>
+                <div class="skill-card fade-in-up" style="animation-delay: 0.15s;">
+                    <p>Content Management</p>
+                </div>
+                <div class="skill-card fade-in-up" style="animation-delay: 0.2s;">
+                    <p>Marketing Analytics</p>
+                </div>
+                <div class="skill-card fade-in-up" style="animation-delay: 0.25s;">
+                    <p>Strategic Marketing</p>
+                </div>
+                <div class="skill-card fade-in-up" style="animation-delay: 0.3s;">
+                    <p>Graphic Design</p>
+                </div>
+                <div class="skill-card fade-in-up" style="animation-delay: 0.35s;">
+                    <p>Campaign Optimization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="about">
+                <div class="about-image fade-in-up">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect fill='%23667eea' width='400' height='400'/%3E%3Ctext x='50%25' y='50%25' font-size='24' fill='white' text-anchor='middle' dominant-baseline='middle' font-family='Arial'%3EAbout Me%3C/text%3E%3C/svg%3E" alt="About">
+                </div>
+                <div class="about-content fade-in-up" style="animation-delay: 0.1s;">
+                    <span class="section-tag">About Me</span>
+                    <h2>Digital Marketing Specialist</h2>
+                    <p>
+                        I'm a digital marketer with a Bachelor's degree in Commerce and professional certifications from Meta and Google. With hands-on experience in creating and managing campaigns, generating leads, and optimizing strategies, I bring a well-rounded approach to digital marketing.
+                    </p>
+                    <p>
+                        My background spans real estate marketing, sales, and graphic design, allowing me to take a holistic approach to brand growth. I'm passionate about crafting compelling content that connects with audiences and drives measurable results.
+                    </p>
+                    <p>
+                        Currently, I'm leading social media management and digital marketing initiatives at Fairy Marketing, where I blend creativity with data-driven strategy to help brands grow their online presence and achieve their business goals.
+                    </p>
+                    <a href="https://www.linkedin.com/in/muhammadusama farooq697/" target="_blank" class="btn btn-primary">View on LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact">
+                <span class="section-tag">Get In Touch</span>
+                <h2>Let's Work Together</h2>
+                <p class="contact-description">
+                    Have a project in mind? I'd love to hear about it. Get in touch and let's create something amazing.
+                </p>
+
+                <div class="contact-methods">
+                    <a href="mailto:malikusama697@gmail.com" class="contact-card">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                        </svg>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/muhammadusama farooq697/" target="_blank" class="contact-card">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://wa.me/923025555944" target="_blank" class="contact-card">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004c-1.052 0-2.082.402-2.847 1.12-.735.71-1.14 1.656-1.14 2.66 0 1.04.424 2.044 1.163 2.789l.03.03c.692.713 1.712 1.12 2.794 1.12h.006c1.079 0 2.097-.408 2.793-1.12 1.478-1.433 1.478-3.772 0-5.205-.695-.71-1.714-1.12-2.799-1.12M12 0C5.383 0 0 5.383 0 12s5.383 12 12 12 12-5.383 12-12S18.617 0 12 0"/>
+                        </svg>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-copyright">
+                    © 2024 Muhammad Usama Farooq. All rights reserved.
+                </div>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in-up');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.project-card, .skill-card').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            } else {
+                nav.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
